@@ -1,39 +1,39 @@
 variable "project_name" {
-    default = "expense"
+  default = "expense"
 }
 
 variable "environment" {
-    default = "dev"
+  default = "dev"
 }
 
 variable "common_tags" {
-    default = {
-        Project = "project"
-        Terraform = "true"
-        Environment = "dev"
-    }
+  default = {
+    Project     = "project"
+    Terraform   = "true"
+    Environment = "dev"
+  }
 }
 
 variable "mysql_sg_tags" {
-    default = {
-        Component = "mysql"
-    }
+  default = {
+    Component = "mysql"
+  }
 }
 
 variable "backend_sg_tags" {
-    default = {
-        Component = "backend"
-    }
+  default = {
+    Component = "backend"
+  }
 }
 
 variable "frontend_sg_tags" {
-    default = {
-        Component = "frontend"
-    }
+  default = {
+    Component = "frontend"
+  }
 }
 
 variable "bastion_sg_tags" {
-    default = {
-        Component = "bastion"
-    }
+  default = {
+    Component = "bastion"
+  }
 }
